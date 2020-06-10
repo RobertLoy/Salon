@@ -11,7 +11,6 @@ import edu.gcu.cst135.salon.data.Haircut;
 import edu.gcu.cst135.salon.data.Product;
 import edu.gcu.cst135.salon.data.Service;
 import edu.gcu.cst135.salon.data.Wash;
-import edu.gcu.cst135.salon.utilities.DataService;
 import edu.gcu.cst135.salon.utilities.UserInterface;
 
 // Starting class where we will tie Customer objects to

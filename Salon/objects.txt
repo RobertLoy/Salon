@@ -1,0 +1,7 @@
+Salon|DEFAULT
+BeardTrim|1|99.99|0.25
+BeardTrim|2|19.99|1.0
+BeardTrim|3|45.45|4.78
+Haircut|4|56.99|5.0
+Product|Olay|Lotion|3.66
+Product|Gillette|Shaving Cream|4.77

@@ -4,8 +4,8 @@ package edu.gcu.cst135.salon.utilities;
 // this will allow persistence between the running of the application
 public interface DataService {
 	
-	abstract void readFile();
+	abstract void read();
 	
-	abstract void writeFile();
+	abstract void write();
 
 }
