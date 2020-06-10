@@ -110,7 +110,6 @@ public class Salon {
 			doHaircut(price, length);
 			break;
 		}
-		System.out.println("There was an error.");
 	}
 
 	private void doBeardTrim(double price, double length) {
