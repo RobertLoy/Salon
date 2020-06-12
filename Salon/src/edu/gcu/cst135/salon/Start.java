@@ -13,8 +13,7 @@ import edu.gcu.cst135.salon.data.Service;
 import edu.gcu.cst135.salon.utilities.DataService;
 
 public class Start implements DataService {
-// Test
-	
+// Steve
 	static final File file = new File("objects.txt");
 	static Salon salon; 
 	
