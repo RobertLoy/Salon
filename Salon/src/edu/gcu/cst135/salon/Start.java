@@ -22,21 +22,51 @@ public class Start implements DataService {
 	public static void main(String [] args) {
 
 		Start start = new Start();
-		//start.readFile();
-		salon = new Salon();
+		start.read();
+		//salon = new Salon();
 		salon.start();
 		start.write();
 	}
 
 	@Override
 	public void read() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Loading previous data...");
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+			String line;
+			while ((line = reader.readLine()) != null) {
+				String [] part = line.split("\\|");
+				switch (part[0]){
+				case "Salon":
+					System.out.println("CREATING SALON");
+					salon = new Salon(part[1]);
+					break;
+				case "BeardTrim":
+					System.out.println("CREATING BEARDTRIM");
+					salon.setServices(new BeardTrim(Double.parseDouble(part[2]),Double.parseDouble(part[3])));
+					break;
+				case "Haircut":
+					System.out.println("CREATING HAIRCUT");
+					salon.setServices(new Haircut(Double.parseDouble(part[2]),Double.parseDouble(part[3])));
+					break;
+				case "Product":
+					System.out.println("CREATING PRODUCT");
+					salon.getCatalog().getProducts().add(new Product(part[1],part[2],Double.parseDouble(part[3])));
+					 break;	
+				default:
+					System.out.println("Class not found");
+				}
+			}
+			reader.close();
+		} catch (Exception e) {
+			
+		}
+
 	}
 
 	@Override
 	public void write() {
-		// TODO Auto-generated method stub
+
 		// store Salon
 		try {
 			FileWriter wr = new FileWriter(file, false);

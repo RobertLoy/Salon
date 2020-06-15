@@ -1,4 +1,4 @@
-Salon|DEFAULT
+Salon|GCU
 BeardTrim|1|99.99|0.25
 BeardTrim|2|19.99|1.0
 BeardTrim|3|45.45|4.78

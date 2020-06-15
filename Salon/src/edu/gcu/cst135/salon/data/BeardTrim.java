@@ -32,4 +32,6 @@ public class BeardTrim extends Grooming {
 	public String toString() {
 		return "BeardTrim|" + getServiceId() + "|" + getPrice()+ "|" + getLength();
 	}
+	
+	
 }
