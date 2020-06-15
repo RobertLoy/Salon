@@ -19,6 +19,10 @@ public class Haircut extends Grooming {
 		this.wash = wash;
 	}
 	
+	public void addWash(){
+		// NEED TO ADD FUNCTIONALITY	
+	}
+	
 	// Data object override methods: toString(), hashCode(), equals(), compareTo()	
 	
 	public String toString() {
