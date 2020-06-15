@@ -19,6 +19,13 @@ public class Haircut extends Grooming {
 		this.wash = wash;
 	}
 	
+	// TICKET# 123457
+	// Manage the ability to update the wash object
+	// Updated 06/15/2020 by Robert Loy
+	public void addWash() {
+		System.out.println("Adding a wash to the haircut.");
+	}
+	
 	// Data object override methods: toString(), hashCode(), equals(), compareTo()	
 	
 	public String toString() {
