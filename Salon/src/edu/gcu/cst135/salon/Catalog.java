@@ -3,12 +3,19 @@ package edu.gcu.cst135.salon;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.gcu.cst135.salon.data.Product;
+import edu.gcu.cst135.salon.utilities.UserInterface;
+
 // A container class that will contain all the product objects
 public class Catalog {
 
 	// Class level Attributes go here
 	// e.g. private int number;
-	public List<Product> products = new ArrayList<>();
+	private List<Product> products = new ArrayList<>();
+	
+	public List<Product> getProducts(){
+		return products;
+	}
 	
 	// Appropriate GETTER/SETTER for private attributes
 	public void setProducts() {
@@ -19,7 +26,7 @@ public class Catalog {
 		products.add(new Product(brand, type, price));
 	}
 	
-	public void getProducts() {
+	public void getProductList() {
 		Object [] options = products.toArray();
 		System.out.println(options.length);
 		UserInterface.displayIntMenu("Products",options);

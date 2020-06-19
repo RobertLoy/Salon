@@ -1,4 +1,4 @@
-package edu.gcu.cst135.salon;
+package edu.gcu.cst135.salon.data;
 
 // The grandparent of BeardTrim and HairTrim and the parent of Grooming
 // Since this is abstract, we can not make objects of this class

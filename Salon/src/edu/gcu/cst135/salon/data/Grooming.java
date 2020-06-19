@@ -1,6 +1,8 @@
-package edu.gcu.cst135.salon;
+package edu.gcu.cst135.salon.data;
 
 import java.util.ArrayList;
+
+import edu.gcu.cst135.salon.Style;
 
 // Abstract parent of HairTrim and BeardTrim and Child of Grooming
 public abstract class Grooming extends Service {    	

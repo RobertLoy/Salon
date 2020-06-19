@@ -1,4 +1,4 @@
-package edu.gcu.cst135.salon;
+package edu.gcu.cst135.salon.data;
 
 //Object needed within Grooming (COMPOSITION/HAS-A)
 public class Product {
@@ -35,6 +35,6 @@ public class Product {
 	// Data object override methods: toString(), hashCode(), equals(), compareTo()
 	@Override
 	public String toString() {
-		return "Product [brand=" + brand + ", type=" + type + ", price=" + price + "]";
+		return "Product|" + brand + "|" + type + "|" + price;
 	}
 }

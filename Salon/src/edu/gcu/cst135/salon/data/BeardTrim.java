@@ -1,4 +1,4 @@
-package edu.gcu.cst135.salon;
+package edu.gcu.cst135.salon.data;
 
 import java.util.ArrayList;
 
@@ -22,6 +22,7 @@ public class BeardTrim extends Grooming {
 		super(price, length, product);  // Makes an object parent class - Haircut
 		this.useCream = cream;
 	}
+	
 
 	// Appropriate GETTER/SETTER for private attributes
 
@@ -29,6 +30,8 @@ public class BeardTrim extends Grooming {
 	
 	// Data object override methods: toString(), hashCode(), equals(), compareTo()	
 	public String toString() {
-		return "BeardTrim \tid = " + getServiceId() + " Price = $" + getPrice()+ " Length = " + getLength();
+		return "BeardTrim|" + getServiceId() + "|" + getPrice()+ "|" + getLength();
 	}
+	
+	
 }

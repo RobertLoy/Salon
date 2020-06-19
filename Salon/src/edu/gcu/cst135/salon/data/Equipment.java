@@ -1,4 +1,4 @@
-package edu.gcu.cst135.salon;
+package edu.gcu.cst135.salon.data;
 
 // An enumeration of various Haircut equipment
 public enum Equipment {
